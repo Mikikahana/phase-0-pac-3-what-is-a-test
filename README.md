@@ -1,4 +1,4 @@
-# Testing With Javascript
+# Testing with JavaScript
 
 ## Learning Goals
 
@@ -16,40 +16,47 @@ considered the most reliable methodology for delivering quality code.
 
 What this means is that the results of running the tests will be an important
 tool in figuring out how to get those tests passing. Code testing can feel like
-an abstract concept at first, but it's worth starting to learn how they work.
+an abstract concept at first, but it's worth starting to learn how it works.
 When you're having difficulty passing a test, being able to read and understand
 the test output — and the tests themselves — can be an invaluable skill.
 
 ## Getting Started
 
-The lesson is set up as a code-along, so you'll first need to fork and
-clone it to your local environment.
+The lesson is set up as a code-along, so you'll first need to **fork and clone**
+it to your local environment.
 
 **Quick Review:**
 
-**1.** click the **Fork** icon in the upper right of this page. This will bring
-you to GitHub. If you are prompted to choose where to fork, choose your personal
-GitHub account.
+**1.** Click the **Octocat** icon in the upper right of this page. This will
+bring you to GitHub. Click the **Fork** button. If necessary, select your
+personal GitHub account as the Owner of the new fork. Click the **Create fork**
+button.
+
+![Gif demonstrating how to fork a repo](https://imgur.com/yIWiknq.gif)
 
 **2.** Once your fork is created, click the **Code** button in GitHub, make sure
 **SSH** is selected, and copy the provided git URL info.
 
-![clone-repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/clone-repo.gif)
+![Gif demonstrating how to clone a repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/clone-repo.gif)
 
 Then, in your terminal:
 
-**3.** Make sure you're in `Development/code` (or wherever you're storing your
-code for the course) and clone the repo to your local machine with `git clone`
-followed by the git URL you copied.
+**3.** Make sure you're in `Development/code/se-prep` (or wherever you're
+storing your code for the course) and clone the repo to your local machine with
+`git clone` followed by the git URL you copied.
 
 ```console
-$ git clone git@github.com:learn-co-curriculum/phase-0-pac-3-what-is-a-test.git
+$ git clone git@github.com:your-github-username/phase-0-pac-3-what-is-a-test.git
 ```
 
-**4.** The previous command will create a folder in the location you're
-currently in containing your fork of this lab's repository. `cd` into the
-repository that you just cloned down in the terminal, then run `code .` to open
-the files in Visual Studio Code.
+> **REMEMBER**: Don't type the `$`. That's the universal symbol for a command
+> prompt. It's how technical documentation says "Here's a thing for the shell to
+> process."
+
+**4.** The previous command will create a folder in the `se-prep` folder
+containing your fork of this lab's repository. `cd` into the repository that you
+just cloned down in the terminal, then run `code .` to open the files in Visual
+Studio Code.
 
 ```console
 $ cd phase-0-pac-3-what-is-a-test
@@ -106,7 +113,7 @@ grab the _value_ inside the variable, not just that variable name.
 ### The Tests
 
 We have our code, now let's take a look at the tests. They are located in the
-`test` folder inside a file named `index-test.js`. In this lesson we'll get
+`test` folder inside a file named `indexTest.js`. In this lesson we'll get
 familiar with the tests, and then run them in the next lesson.
 
 ```javascript
@@ -145,8 +152,8 @@ variables written in the `index.js` file from within the test file.
 The next thing to notice is that the test code itself is commented out using the
 `/*` and `*/` block commenting syntax. This is because, as mentioned above, we
 don't actually want to run the tests yet. We will run the tests in the lab that
-follows this lesson; in the version of the files provided for the lab, you'll see
-that the `/*` and `*/` have been removed.
+follows this lesson; when you fork and clone that version of the files, you'll
+see that the `/*` and `*/` have been removed.
 
 Next, note that the test code consists of three individual tests (each starting
 with `describe`) nested inside a block for the tests as a whole (also starting
@@ -191,20 +198,24 @@ This one has two `expect` statements. If you read them out as English you'll
 discover that the tests expect the value of `index.message` to include both
 `index.name` and `index.height`.
 
-OK Great. You now understand what the tests are saying. In the next lesson we
+OK great. You now understand what the tests are saying. In the next lesson we
 are going to cover how to run them, and then you will solve the lab!
 
-## Submitting the Assignment
+## Submitting the Code-Along
 
-To register completion of this lesson, submit the URL for your forked copy of
-the repo in Canvas. Even though you didn't need to write any code for this
-lesson, you'll need to submit a link in order for this lesson to be marked as
-complete in Canvas.
+Even though you didn't need to write any code for this lesson, you'll still need
+to submit it using CodeGrade in order for it to be marked as complete in Canvas.
 
-1. Go to your repository in GitHub and copy the URL. Note, this should be copied
-   from the browser's address bar, and should start with https://github.com/
-2. Go to the assignment in Canvas and click Submit Assignment (or Start
-   Assignment)
-3. Paste in your GitHub URL as your submission
+Scroll to the bottom of this lesson page in Canvas and click the button labeled
+"Load Testing With JavaScript in a new window".
+
+In the CodeGrade window that opens, click "Create Submission". You should now
+see a list of your repositories. Find the repo for this lesson and click
+Connect. When you get the message that your repo has been connected, click on
+the embedded link, then the "AutoTest" tab. After a few moments, you should see
+the green checkmark in the "Pass" column, indicating that you've successfully
+submitted the lesson.
+
+![CodeGrade window showing tests have all been passed](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments-codegrade/codegrade-tests-passing.png)
 
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
